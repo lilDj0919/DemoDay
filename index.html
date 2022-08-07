@@ -1,57 +1,25 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <meta http-equiv="Content-Style-Type" content="text/css">
-        <title>List</title>
-        <meta name="Generator" content="Cocoa HTML Writer">
-        <meta name="CocoaVersion" content="1894.6">
-    
-        <link rel="stylesheet" type="text/css" href="index.css" />
-    
+        <title>Password</title>
     </head>
     <body>
-        <h1> Places We Could Go...</H1>
-        <br>
-        <input type="text" id="box" value="Type here to add task"/>
-        <br>
-        <input type="button" value="Add Item" onclick="addItem();"/>
-        <br>
-        <div id="list"></div>
+        <p> Please enter password to view the website:</p>
+  <p> Password: <input id="passwordBox" type="password"/>
+  <a href="index.html" onclick="return confirmPassword();">
+    Click Here to Enter Website! </a>
+  </p>
 
-        <iframe
-  width="600"
-  height="450"
-  style="border:0"
-  loading="lazy"
-  allowfullscreen
-  referrerpolicy="no-referrer-when-downgrade"
-  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyB7jBVA1sFl1kdBlU1ag-PxYQ0lrZwrkvk
-  &q=Space+Needle,Atlanta+GA">
-        </iframe>
-        <iframe
-  width="600"
-  height="450"
-  style="border:0"
-  loading="lazy"
-  allowfullscreen
-  referrerpolicy="no-referrer-when-downgrade"
-  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyB7jBVA1sFl1kdBlU1ag-PxYQ0lrZwrkvk
-  &q=Space+Needle,Atlanta+GA">
-        </iframe>
-
-
-        <script>
-            function addItem () {
-                var newItem = document.createElement("div");
-                newItem.innerHTML = document.getElementById("box").value;
-                newItem.onclick = removeItem;
-                document.getElementById("list").appendChild(newItem);
-                }
-                function removeItem(){
-                    document.getElementById("list").removeChild(this);
-                    }
-        </script>
-    </body>
-    AIzaSyB7jBVA1sFl1kdBlU1ag-PxYQ0lrZwrkvk
+  <script>
+function confirmPassword() {
+  var password = document.getElementById("passwordBox");
+  var passwordText = password.value;
+  if (passwordText == "DDT22"){
+    return true;
+  }
+  alert ("Access denied! Incorrect Password");
+  return false;
+}
+</script>
+</body>
 </html>
