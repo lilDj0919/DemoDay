@@ -1,19 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <title>Password</title>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     
+      <!--The CSS only!!!!!-->
+      <link rel="stylesheet" href="index.css">
+      <!--ICONS!!!!!!!-->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+      <title>Password</title>
     </head>
+
+
     <body>
-        <p> Please enter password to view the website:</p>
-  <p> Password: <input id="passwordBox" type="password"/>
-  <a href="list.html" onclick="return confirmPassword();">
-    Click Here to Enter Website! </a>
-  </p>
+      <br>
+        <div class="main-box">
+          <div class="input-box">
+            <div><h1> Please enter password to view the website:</h1></div>
+            <div class="input-container">
+              <i class="fa fa-lock" aria-hidden="true"></i>
+              <input id="passInput" type="password" placeholder="Password...">
+              <a href="list.html" onclick="return confirmPassword();" id="passwordBox">Submit</a></p>
+            </div>
+          </div>
+        </div>
+
+        
+  
+
 
   <script>
 function confirmPassword() {
-  var password = document.getElementById("passwordBox");
-  var passwordText = password.value;
+  var password = document.getElementById("passInput");
+  var passwordText = password.value; 
   if (passwordText == "DDT22"){
     return true;
   }
