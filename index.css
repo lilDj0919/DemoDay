@@ -62,3 +62,8 @@ body{
 .input-container{
     display: flex;
 }
+
+p{
+    font-size: 50px;
+    font-family: 'Nunito', sans-serif;
+}

@@ -1,37 +1,74 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
     <head>
+        <link rel="stylesheet" type="text/css" href="list.css" />
+       
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <meta http-equiv="Content-Style-Type" content="text/css">
         <title>List</title>
         <meta name="Generator" content="Cocoa HTML Writer">
         <meta name="CocoaVersion" content="1894.6">
     
-        <link rel="stylesheet" type="text/css" href="index.css" />
-    
+        <style>
+            body {
+                background-color: bisque;
+            }
+        </style>
+        
     </head>
     <body>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Team DDT</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="aboutus2.html">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contactus.html">Contact Us</a>
+                  </li>
+                 
+                </ul>
+              </div>
+            </div>
+          </nav>
+       <br>
+       <br>
         <!--H1 represents the header of -->
         <h1> Places We Could Go...</H1>
         <br>
-        <input type="text" id="box" value="Type here to add task"/>
+        <input type="text" id="box" placeholder="Type here to add task"/>
         <br>
         <input type="button" value="Add Item" onclick="addItem();"/>
         <br>
         <div id="list"></div>
-
+        <br>
         <iframe
-            width="600"
-            height="450"
-            style="border:0"
-            loading="lazy"
-            allowfullscreen
-            referrerpolicy="no-referrer-when-downgrade"
-            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyB7jBVA1sFl1kdBlU1ag-PxYQ0lrZwrkvk
-            &q=Space+Needle,Paris+FRANCE">
-        </iframe>
+        width="400"
+        height="450"
+        style="border:0"
+        loading="lazy"
+        allowfullscreen
+        referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyB7jBVA1sFl1kdBlU1ag-PxYQ0lrZwrkvk
+        &q=Space+Needle,Paris+France">
+    </iframe>
         <iframe
-            width="600"
+            width="400"
             height="450"
             style="border:0"
             loading="lazy"
@@ -42,7 +79,7 @@
         </iframe>
 
         <iframe
-        width="600"
+        width="400"
         height="450"
         style="border:0"
         loading="lazy"
@@ -51,6 +88,29 @@
         src="https://www.google.com/maps/embed/v1/place?key=AIzaSyB7jBVA1sFl1kdBlU1ag-PxYQ0lrZwrkvk
         &q=Space+Needle,Toronto+CA">
     </iframe>
+
+    <br>
+    <br>
+
+    <div class="Places">
+        <div class="deionplace">
+            <h1> Where does Deion want to go?...</h1>
+            <p>I would love to go to the city of Paris, because I was intrigued by it's great scenary and all the wonderful things I've heard about it.</p>
+        </div>
+
+        <div class="d'aveonplace">
+            <h1> Where does D'Aveon want to go?...</h1>
+            <p> I want to go to Toronto, Canada. Toronto to me has a great feel, fasinating culture, amazing food, jaw-dropping sports, and breath-taking natural wonder of the world only 2 hours and 26 minutes away.</p>
+        </div>
+
+        <div class="tyreeplace">
+            <h1> Where does Tyree want to go?...</h1>
+            <p>I want to go to Tokyo, Japan because it's food, I really love sushi. I love the cars and the Street Racing, Japan has such great scenery such as Imperial Palaces & museums. The culture is cool as well from the way they dress to the way the houses are built. </p>
+        </div>
+    </div>
+
+
+
 
         <script>
             function addItem () {
