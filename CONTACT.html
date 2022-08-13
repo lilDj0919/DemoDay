@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+ <!-- This is the CSS(Cascading Style Sheets) that styles the web page. -->
+  <style type="text/css">
+  Body {
+    background-color: rgb(255, 255, 255);
+    font-size: 15pt;
+  }
+   body  {
+    text-align: center;
+   }
+  input[type="button"] {
+background-color: rgb(255, 255, 255);
+  }
+
+  nav {
+    background-color: rgb(255, 255, 255);
+    font-size: 15pt;
+  
+  }
+  </style>
+
+  
+</head>
+
+</iframe>
+<body>
+  <h1> Contact Us</h1>
+    <table> 
+      <tr>
+        <td> Tyree Wimberly's Email address </td>
+        <td><a href="mailto:tjchoice@gmail.com">tjchoice@gmail.com</a></td>
+      </tr>
+      <br>
+      
+      <tr>
+        <td>  Deion Thomas's Email address </td>
+        <td><a href="mailto:deionthomas199@gmail.com">deionthomas199@gmail.com</a></td>
+      </tr>
+      <br>
+      <tr>
+        <td>  D'Aveon Jackson's Email address  </td>
+        <td><a href="mailto:dj.jackson4367@gmail.com">dj.jackson4367@gmail.com</a></td>
+      </tr>
+      <br>
+      
+  
+
+  
+ 
+  <div id="list"></div>
+    </table>
+
+<script>
+function addItem () {
+  var newItem = document.createElement("div");
+  newItem.innerHTML = document.getElementById("box").value;
+  newItem.onclick = removeItem;
+  document.getElementById("list").appendChild(newItem);
+}
+function removeItem(){
+  document.getElementById("list").removeChild(this);
+}
+
+</script>
+</body>
+</html>
